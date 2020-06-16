@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar color="verdeMusgo">
+    <ion-title *ngFor="let dato of data">{{dato.nome_popular}}</ion-title>
+  </ion-navbar>
+</ion-header>  
+
+
+ <ion-content class="card-background-page"  *ngFor="let dato of data" > 
+
+
+  <ion-card>
+    <img class ="image" src="../../assets/imgs/galeria/{{this.dato.qrcode2}}/1.png" #myImage
+    (click)="presentImage(myImage)"/>
+</ion-card> 
+
+<ion-card>
+  <img class ="image" src="../../assets/imgs/galeria/{{this.dato.qrcode2}}/2.png" #myImage2
+  (click)="presentImage(myImage2)"/>
+</ion-card>
+
+
+<ion-card>
+  <img class ="image" src="../../assets/imgs/galeria/{{this.dato.qrcode2}}/3.png" #myImage3
+  (click)="presentImage(myImage3)"/>
+</ion-card>
+
+
+<ion-card>
+  <img class ="image" src="../../assets/imgs/galeria/{{this.dato.qrcode2}}/4.png" #myImage4
+  (click)="presentImage(myImage4)"/>
+</ion-card>
+                                                                                                                                                              
+<ion-card [hidden] = "this.dato.qrcode2 != 'QR-Chorão'">
+  <img class ="image" src="../../assets/imgs/galeria/{{this.dato.qrcode2}}/5.png" #myImage5
+  (click)="presentImage(myImage5)"/>
+</ion-card>
+
+<ion-card [hidden] = "this.dato.qrcode2 != 'QR-BordoJapones'">
+  <img class ="image" src="../../assets/imgs/galeria/{{this.dato.qrcode2}}/5.png" #myImage5
+  (click)="presentImage(myImage5)"/>
+</ion-card>
+
+<ion-card [hidden] = "this.dato.qrcode2 != 'QR-BordoVermelho'">
+  <img class ="image" src="../../assets/imgs/galeria/{{this.dato.qrcode2}}/5.png" #myImage5
+  (click)="presentImage(myImage5)"/>
+</ion-card>
+
+</ion-content> 
+

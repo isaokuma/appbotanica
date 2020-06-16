@@ -1,0 +1,75 @@
+page-info {
+
+
+    .myCard{
+        display: block;
+        margin: 0 auto; 
+        width: 46vh;    // A largura se ajusta conforme a altura
+        height: 23vh;   // Height = x% da tela
+        border-radius: 5px;
+    
+    }
+    .myCard2{
+        display: block;
+        margin: 0 auto; 
+        width: 45vh;    // A largura se ajusta conforme a altura
+        height: 25vh;   // Height = x% da tela
+        border-radius: 5px;
+    
+    }
+
+     .bg-style {
+         background:#63bfab
+     }
+
+
+ 
+    .swiper-pagination-bullet {
+        background: #ff715b;
+        opacity: 0.5;
+        align-items: flex-end;
+      }
+    
+      .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #ff715b;
+        align-items: flex-end;
+      }
+
+    .swiper-button-next.swiper-button-white{
+        top: 50% !important
+    }
+
+    .swiper-button-prev.swiper-button-white{
+        top: 50% !important
+    }
+
+    .descricao {
+        text-align: left
+    }
+
+    .titulo{
+       color: #f4f4f4;
+       text-align: left;
+    }
+
+    ion-card-header{
+        background-color: #ff715b;
+    }
+
+    .titulo-nome{
+        color:  #63bfab;
+        font-weight: bold	
+    }
+
+    .especie{
+        font-style: italic;
+    }
+
+    .image {
+    margin-top: 56px !important;
+    height: 55vw !important; 
+    width: 100vw !important; 
+    }
+
+}

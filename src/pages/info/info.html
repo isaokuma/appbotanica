@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-navbar color="verdeMusgo">
+    <ion-title>Informações</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content *ngFor="let dato of data">
+
+  <ion-list>
+    <ion-item>
+      <h2>Nome Científico</h2>
+      <p>{{dato.nome_cientifico}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h2>Nome Científico</h2>
+      <p>{{dato.nome_cientifico}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h2>Nome popular</h2>
+      <h2>{{dato.nome_popular}}</h2>
+    </ion-item>
+
+    <ion-item>
+      <h2>Família</h2>
+      <p>{{dato.familia}}</p>
+    </ion-item>
+
+
+    <ion-item>
+      <h2>Grupo Ecológico</h2>
+      <p>{{dato.grupo_ecologico}}</p>
+    </ion-item>
+
+
+    <ion-item>
+      <h2>Origem</h2>
+      <p>{{dato.origem}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h2>Bioma</h2>
+      <p>{{dato.bioma}}</p>
+    </ion-item>
+
+
+    <ion-item text-wrap *ngIf="dato.centro_origem == ''">
+      <h2>Ocorrencia</h2>
+      {{dato.ocorrencia}}
+    </ion-item>
+
+    <ion-item text-wrap *ngIf="dato.centro_origem != ''">
+      <h2>Centro de origem</h2>
+      {{dato.centro_origem}}
+    </ion-item>
+    
+
+    <ion-item>
+      <h2>Sistema sexual</h2>
+      <p>{{dato.sexo}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h2>Época de floração</h2>
+      <p>{{dato.floracao}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h2>Época de frutificação</h2>
+      <p>{{dato.frutificacao}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h2>Síndrome de polinização</h2> 
+      <p>{{dato.s_polinizacao}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h2>Síndrome de dispersão</h2>
+      <p>{{dato.s_dispersao}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h2>Tipo de Fruto</h2>
+      <p>{{dato.tipo_fruto}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h2>Tipo de Folha</h2>
+      <p>{{dato.tipo_folha}}</p>
+    </ion-item>
+
+    <ion-item>
+      <h2>Filotaxia</h2>
+      <p>{{dato.filotaxia}}</p>
+    </ion-item>
+
+
+    <ion-item text-wrap>
+      <h2>Utilizações</h2>
+      {{dato.utilizacoes}}
+    </ion-item>
+
+  </ion-list>
+</ion-content>

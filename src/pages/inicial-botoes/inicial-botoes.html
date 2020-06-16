@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="verdeMusgo">
+    <ion-title *ngFor="let dato of data" class="titulo">{{dato.binomio}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row class="row">
+      <ion-col col-12>
+        <ion-card text-center padding color="verde" class="myCard" (click)="goToInfo()">
+          <img src='../../assets/imgs/icones/informacoes.png' class="imagem-card">
+          <h2 class="texto-card">Informações da Espécie</h2>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+    <ion-row class="row">
+      <ion-col col-12>
+        <ion-card text-center padding color="verde" class="myCard" (click)="goToFotos()">
+          <img src='../../assets/imgs/icones/galeria.png' class="imagem-card">
+          <h2 class="texto-card">Imagens</h2>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+ </ion-content>
